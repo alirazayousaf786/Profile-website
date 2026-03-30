@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { ExternalLink, Folder } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 
 const categories = ["All", "Full Stack", "Frontend", "Next.js"];
 
@@ -135,7 +136,7 @@ export function Projects() {
                       whileTap={{ scale: 0.95 }}
                       className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-secondary text-foreground text-sm font-semibold border border-border"
                     >
-                      <Github size={15} />
+                      <FaGithub size={15} />
                       Code
                     </motion.a>
                   </div>

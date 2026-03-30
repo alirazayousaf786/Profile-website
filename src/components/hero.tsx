@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowDown } from "lucide-react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const GITHUB = "https://github.com/alirazayousaf786";
 const LINKEDIN = "https://www.linkedin.com/in/ali-raza-6008aa289/";
@@ -95,13 +96,13 @@ export function Hero() {
 
           <div className="flex items-center space-x-6 pt-8">
             <a href={GITHUB} target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-primary transition-colors">
-              <Github size={24} />
+              <FaGithub size={24} />
             </a>
             <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" className="p-2 text-muted-foreground hover:text-primary transition-colors">
-              <Linkedin size={24} />
+              <FaLinkedin size={24} />
             </a>
-            <a href="mailto:alirazayousaf420@gmail.com" className="p-2 text-muted-foreground hover:text-primary transition-colors">
-              <Twitter size={24} />
+            <a href="#" className="p-2 text-muted-foreground hover:text-primary transition-colors">
+              <FaTwitter size={24} />
             </a>
           </div>
         </motion.div>

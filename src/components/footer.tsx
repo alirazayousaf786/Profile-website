@@ -1,4 +1,5 @@
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const WHATSAPP_NUMBER = "923186024630";
 const WHATSAPP_MESSAGE = "Hi Ali Raza! I visited your portfolio and I'd like to discuss a project with you.";
@@ -29,13 +30,13 @@ export function Footer() {
 
         <div className="flex items-center space-x-4">
           <a href="https://github.com/alirazayousaf786" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-muted-foreground hover:text-primary hover:scale-110 transition-all border border-border">
-            <Github size={18} />
+            <FaGithub size={18} />
           </a>
           <a href="https://www.linkedin.com/in/ali-raza-6008aa289/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-muted-foreground hover:text-primary hover:scale-110 transition-all border border-border">
-            <Linkedin size={18} />
+            <FaLinkedin size={18} />
           </a>
           <a href="#" className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-muted-foreground hover:text-primary hover:scale-110 transition-all border border-border">
-            <Twitter size={18} />
+            <FaTwitter size={18} />
           </a>
           <a href="mailto:alirazayousaf420@gmail.com" className="w-10 h-10 rounded-full bg-background flex items-center justify-center text-muted-foreground hover:text-primary hover:scale-110 transition-all border border-border">
             <Mail size={18} />
