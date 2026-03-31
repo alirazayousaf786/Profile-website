@@ -17,18 +17,7 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
-    sourcemap: false,                    // ← Yeh must hai
-    chunkSizeWarningLimit: 1000,
-    rollupOptions: {
-      onwarn(warning, warn) {
-        // Tooltip ka sourcemap warning ignore kar do
-        if (warning.code === "SOURCEMAP_ERROR" || 
-            (warning.message && warning.message.includes("Can't resolve original location"))) {
-          return;
-        }
-        warn(warning);
-      },
-    },
+    chunkSizeWarningLimit: 2000,
   },
   publicDir: "public",
   server: {
