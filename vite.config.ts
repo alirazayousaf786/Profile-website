@@ -17,19 +17,13 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
-    sourcemap: false,
-    chunkSizeWarningLimit: 800,        // 800 bhi kaafi hai
+    sourcemap: false,                    // ← Yeh must hai
+    chunkSizeWarningLimit: 1000,
     rollupOptions: {
       onwarn(warning, warn) {
-        // Ignore sourcemap errors
+        // Tooltip ka sourcemap warning ignore kar do
         if (warning.code === "SOURCEMAP_ERROR" || 
-            warning.message?.includes("Can't resolve original location of error")) {
-          return;
-        }
-        // Ignore chunk size warning
-        if (warning.code === "SOURCEMAP_ERROR" || 
-            warning.message?.includes("is larger than") || 
-            warning.code === "BUNDLE_WARNING") {
+            (warning.message && warning.message.includes("Can't resolve original location"))) {
           return;
         }
         warn(warning);
