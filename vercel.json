@@ -2,6 +2,8 @@
   "framework": "vite",
   "outputDirectory": "dist/public",
   "packageManager": "npm",
+  "buildCommand": "npm run build",
+  "installCommand": "npm install",
   "rewrites": [
     {
       "source": "/(.*)",
