@@ -1,6 +1,7 @@
 {
   "framework": "vite",
-  "outputDirectory": "dist",
+  "outputDirectory": "dist/public",
+  "packageManager": "npm",
   "rewrites": [
     {
       "source": "/(.*)",
