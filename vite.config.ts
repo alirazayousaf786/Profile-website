@@ -17,8 +17,8 @@ export default defineConfig({
   build: {
     outDir: "dist",
     emptyOutDir: true,
-    sourcemap: false,           // ← Yeh line add kar do (error warning khatam)
-    chunkSizeWarningLimit: 800, // optional (chunk size warning ke liye)
+    sourcemap: false,               // ← Yeh line important hai (warning khatam)
+    chunkSizeWarningLimit: 800,     // ← Chunk size warning bhi kam ho jayega
   },
   publicDir: "public",
   server: {
