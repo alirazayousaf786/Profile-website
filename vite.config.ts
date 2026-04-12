@@ -1,0 +1,42 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import path from "path";
+
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+  resolve: {
+    alias: {
+      "@": path.resolve(import.meta.dirname, "src"),
+    },
+    dedupe: ["react", "react-dom"],
+  },
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+    sourcemap: false,                    // ← Yeh must hai
+    chunkSizeWarningLimit: 2000,
+    rollupOptions: {
+      onwarn(warning, warn) {
+        // Tooltip ka sourcemap warning ignore kar do
+        if (warning.code === "SOURCEMAP_ERROR" || 
+            (warning.message && warning.message.includes("Can't resolve original location"))) {
+          return;
+        }
+        warn(warning);
+      },
+    },
+  },
+  publicDir: "public",
+  server: {
+    port: 3000,
+    host: "0.0.0.0",
+  },
+  preview: {
+    port: 3000,
+    host: "0.0.0.0",
+  },
+});

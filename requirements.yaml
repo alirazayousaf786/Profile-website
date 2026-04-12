@@ -1,0 +1,16 @@
+packages:
+  "framer-motion": "Required for smooth scrolling, page transitions, and complex interactive animations"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility to resolve tailwind class conflicts"
+
+images:
+  - path: "artifacts/portfolio/public/images/avatar.png"
+    description: "A highly stylized, premium 3D portrait illustration of a professional developer, sleek, modern lighting, dark background with subtle neon violet and indigo rim lights"
+    aspect_ratio: "1:1"
+  - path: "artifacts/portfolio/public/images/abstract-bg.png"
+    description: "An elegant, premium abstract background with dark glassmorphism elements, subtle glowing orbs in deep indigo and violet colors, extremely clean and high-end"
+    aspect_ratio: "16:9"
+
+notes:
+  - Form submission is simulated with a timeout and toast notification as requested
+  - Project relies on standard smooth scrolling with #id anchors
