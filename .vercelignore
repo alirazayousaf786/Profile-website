@@ -1,7 +1,11 @@
 node_modules
 .git
-.env.local
-.env.*.local
-dist
-build
-*.log
+.gitignore
+README.md
+src
+public/Alex_Johnson_CV.pdf.html
+.vercelignore
+vite.config.ts
+tsconfig.json
+components.json
+netlify.toml
