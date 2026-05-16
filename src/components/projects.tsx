@@ -39,6 +39,28 @@ const projects = [
     githubLink: "https://github.com/alirazayousaf786",
     accent: "from-amber-500 to-orange-500",
   },
+ {
+  id: 4,
+  title: "Modern Blog Website",
+  description: "A professional blog website built with Next.js featuring fast performance, responsive design, SEO optimization, dynamic blog pages, and smooth navigation experience.",
+  image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=500&fit=crop",
+  category: "Next.js",
+  tags: ["Next.js", "Tailwind CSS", "Blog", "SEO"],
+  demoLink: "https://aliblog-gamma.vercel.app/",
+  githubLink: "https://github.com/alirazayousaf786/aliblog",
+  accent: "from-blue-500 to-cyan-500",
+},
+{
+  id: 5,
+  title: "Learning Web App Backend",
+  description: "Scalable backend API for an E-Learning web application built with Node.js and Express.js. Features user authentication, course management, video handling, secure APIs, and MongoDB database integration.",
+  image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop",
+  category: "Node.js",
+  tags: ["Node.js", "Express.js", "MongoDB", "REST API"],
+  demoLink: "https://ay-learning.vercel.app/",
+  githubLink: "https://github.com/alirazayousaf786/Ay-Learning",
+  accent: "from-green-500 to-emerald-500",
+},
 ];
 
 export function Projects() {
